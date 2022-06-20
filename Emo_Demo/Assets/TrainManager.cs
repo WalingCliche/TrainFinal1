@@ -13,12 +13,17 @@ public class TrainManager : MonoBehaviour
     }
     void Start()
     {
-        trains = new GameObject[transform.childCount];
-        for (int i = 0; i < transform.childCount; i++)
-        {
-            trains[i] = transform.GetChild(i).GetChild(0).gameObject;
-            if (i != 0)
-                trains[i].SetActive(false);
-        }
+        //trains = new GameObject[transform.childCount];
+        //for (int i = 0; i < transform.childCount; i++)
+        //{
+        //    trains[i] = transform.GetChild(i).GetChild(0).gameObject;
+        //}   
+        StartCoroutine(StartTrain(trains[0],13f));
+    }
+    IEnumerator StartTrain(GameObject X, float time) { 
+    yield  return new WaitForSeconds(time);
+
+
     }
 }
+

@@ -15,7 +15,7 @@ public class RandomMove : MonoBehaviour
     private float speed, range;
     private float blueToWhite, whiteToRed;
     // Start is called before the first frame update
-    private Vector3 randomTar, randomPos;
+    public Vector3 randomTar, randomPos;
     private Vector2 worldPosLeftBottom, worldPosTopRight;
     private SpriteRenderer sp;
     private TMP_Text emoValueText;

@@ -17,10 +17,11 @@ public class ShootBullet : MonoBehaviour
    //     GetComponent<RandomMove>().enabled = false;
         GetComponent<Rigidbody2D>().gravityScale = 0.1f;
         //   rig.AddForce(new Vector2(Random.Range(0.5f,1.5f), Random.Range(0.5f, 1.5f))*force);
-        // StartCoroutine(Move(changeTime));
+         StartCoroutine(ResetGravity(0.5f));
     }
-    IEnumerator Move(float sec) { 
+    IEnumerator ResetGravity(float sec) { 
     yield return new WaitForSeconds(sec);
-        GetComponent<RandomMove>().enabled = true;    
+      //  GetComponent<RandomMove>().enabled = true;
+        GetComponent<Rigidbody2D>().gravityScale = 0f;
     }
 }

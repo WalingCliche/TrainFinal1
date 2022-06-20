@@ -6,7 +6,9 @@ public class Trains : MonoBehaviour
 {
     [Header("泥头车Setting")]
      GameObject redball, blueball, whiteball;
-    public BallColor color;
+    public float shootTime;
+    public BallColor shootColor;
+    public int shootNum;
     public Transform shootPos;
     public Transform[] pos;
     public float trainSpeed;
@@ -15,6 +17,7 @@ public class Trains : MonoBehaviour
     private Transform targetPos;
     private Vector3 startPos;
     private int index;
+    private bool oneTime;
     private float timer;
 
     // Start is called before the first frame update
@@ -44,7 +47,7 @@ public class Trains : MonoBehaviour
 
         if (Vector2.Distance(transform.position, pos[index].position) < 0.02f && index == pos.Length - 1)
         {
-             Destroy(gameObject);
+             Destroy(transform.parent.gameObject);
             TrainReset();
             int x = Random.Range(0, TrainManager._ins.trains.Length);
             while (gameObject == TrainManager._ins.trains[x])
@@ -54,10 +57,15 @@ public class Trains : MonoBehaviour
 
 
         timer += Time.deltaTime;
-        if (timer > ShootManager._ins.shootTime)
+        if (timer > shootTime&&!oneTime)
         {
-            ShootBall(color);
+            for (int i = 0; i < shootNum; i++)
+            {
+                ShootBall(shootColor);
+            }
+
             timer = 0;
+            oneTime = true;
         }
 
 
