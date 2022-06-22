@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public enum GameState{indle,win,lose}
 public class GameManager : MonoBehaviour
 {
+    public GameObject GoalUI;
     public  Vector3 starsStandard;
     public GameObject BottomWiningUI;
     public int levelIndex;
@@ -24,6 +25,8 @@ public class GameManager : MonoBehaviour
     private bool winning;
     public bool losing;
     public bool start;
+
+    private GameObject[] balls;
     private void Awake()
     {
         _ins = this;
@@ -38,6 +41,14 @@ public class GameManager : MonoBehaviour
         winUI.SetActive(false);
         loseUI.SetActive(false);
         StartCoroutine(TranDown());
+        balls = GameObject.FindGameObjectsWithTag("Ball");
+        if (levelIndex == 1)
+            foreach (var item in balls)
+        {
+            item.GetComponent<RandomMove>().enabled = false;
+        }
+
+
     }
     private void Update()
     {
@@ -132,6 +143,8 @@ public class GameManager : MonoBehaviour
     IEnumerator TranDown() {
         tranDownUI.SetActive(true);
         yield return new WaitForSeconds(1.4f);
+        if(levelIndex==1)
+        GoalUI.SetActive(true);
         tranDownUI.SetActive(false);
         initialized();
     }

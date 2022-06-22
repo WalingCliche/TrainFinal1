@@ -975,6 +975,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1169261114 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2012776061023296526, guid: 4b409a5f772fef0448710c3dd4b152db,
+    type: 3}
+  m_PrefabInstance: {fileID: 8606661078897020409}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1275085273 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8606661079013766895, guid: 4b409a5f772fef0448710c3dd4b152db,
@@ -1010,6 +1016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3ab446678a572947a375dc30a711139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GoalUI: {fileID: 1169261114}
   starsStandard: {x: 0, y: 7.5, z: 15}
   BottomWiningUI: {fileID: 0}
   levelIndex: 2

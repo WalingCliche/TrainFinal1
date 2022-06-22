@@ -628,6 +628,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8606661078897020409}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &248258694 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4071292211205853907, guid: 4b409a5f772fef0448710c3dd4b152db,
+    type: 3}
+  m_PrefabInstance: {fileID: 8606661078897020409}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &303387748
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,6 +1125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3ab446678a572947a375dc30a711139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GoalUI: {fileID: 8606661078897020410}
   starsStandard: {x: 0, y: 7.5, z: 15}
   BottomWiningUI: {fileID: 0}
   levelIndex: 5
@@ -1831,6 +1838,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4352559574263077743}
     m_Modifications:
+    - target: {fileID: 127574998687628333, guid: 727c3d9fe40697e4fa112fce8bcc9dff,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -8709216409482122254, guid: 5f9ed155d0c34784d8f77acc19a5f5b1,
+        type: 2}
+    - target: {fileID: 127574998687628335, guid: 727c3d9fe40697e4fa112fce8bcc9dff,
+        type: 3}
+      propertyPath: m_text
+      value: Today is a sunny day!
+      objectReference: {fileID: 0}
+    - target: {fileID: 127574998687628335, guid: 727c3d9fe40697e4fa112fce8bcc9dff,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5f9ed155d0c34784d8f77acc19a5f5b1,
+        type: 2}
+    - target: {fileID: 127574998687628335, guid: 727c3d9fe40697e4fa112fce8bcc9dff,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8709216409482122254, guid: 5f9ed155d0c34784d8f77acc19a5f5b1,
+        type: 2}
     - target: {fileID: 646439422640653345, guid: 727c3d9fe40697e4fa112fce8bcc9dff,
         type: 3}
       propertyPath: m_Material
@@ -2160,6 +2190,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 636431810428921237, guid: 4b409a5f772fef0448710c3dd4b152db,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2915744964751736613, guid: 4b409a5f772fef0448710c3dd4b152db,
         type: 3}
       propertyPath: m_Texture
@@ -2190,6 +2225,11 @@ PrefabInstance:
       propertyPath: goal
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5109777734884592419, guid: 4b409a5f772fef0448710c3dd4b152db,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5203526740884047602, guid: 4b409a5f772fef0448710c3dd4b152db,
         type: 3}
       propertyPath: m_Texture
@@ -2215,6 +2255,11 @@ PrefabInstance:
       propertyPath: m_Texture
       value: 
       objectReference: {fileID: 2800000, guid: 78115401cc84bef48a14a9fcd2f35f33, type: 3}
+    - target: {fileID: 7161671992890418260, guid: 4b409a5f772fef0448710c3dd4b152db,
+        type: 3}
+      propertyPath: mute
+      value: 
+      objectReference: {fileID: 248258694}
     - target: {fileID: 7760805278982024106, guid: 4b409a5f772fef0448710c3dd4b152db,
         type: 3}
       propertyPath: m_IsActive
@@ -2225,6 +2270,16 @@ PrefabInstance:
       propertyPath: m_Texture
       value: 
       objectReference: {fileID: 2800000, guid: 78115401cc84bef48a14a9fcd2f35f33, type: 3}
+    - target: {fileID: 8128800072953672301, guid: 4b409a5f772fef0448710c3dd4b152db,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8278385617448314857, guid: 4b409a5f772fef0448710c3dd4b152db,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 8606661079112339979, guid: 4b409a5f772fef0448710c3dd4b152db,
         type: 3}
       propertyPath: m_Name
@@ -2337,6 +2392,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b409a5f772fef0448710c3dd4b152db, type: 3}
+--- !u!1 &8606661078897020410 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6603211331656935895, guid: 4b409a5f772fef0448710c3dd4b152db,
+    type: 3}
+  m_PrefabInstance: {fileID: 8606661078897020409}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8977696860189189260
 PrefabInstance:
   m_ObjectHideFlags: 0

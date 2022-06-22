@@ -1033,6 +1033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3ab446678a572947a375dc30a711139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GoalUI: {fileID: 8606661078897020410}
   starsStandard: {x: 0, y: 7.5, z: 15}
   BottomWiningUI: {fileID: 0}
   levelIndex: 4
@@ -2236,6 +2237,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b409a5f772fef0448710c3dd4b152db, type: 3}
+--- !u!1 &8606661078897020410 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2012776061023296526, guid: 4b409a5f772fef0448710c3dd4b152db,
+    type: 3}
+  m_PrefabInstance: {fileID: 8606661078897020409}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8977696860189189260
 PrefabInstance:
   m_ObjectHideFlags: 0

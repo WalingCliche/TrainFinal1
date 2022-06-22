@@ -1033,6 +1033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3ab446678a572947a375dc30a711139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GoalUI: {fileID: 8606661078897020410}
   starsStandard: {x: 0, y: 7.5, z: 15}
   BottomWiningUI: {fileID: 0}
   levelIndex: 3
@@ -1751,6 +1752,69 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4352559574263077743}
     m_Modifications:
+    - target: {fileID: 127574998687628330, guid: 727c3d9fe40697e4fa112fce8bcc9dff,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.495
+      objectReference: {fileID: 0}
+    - target: {fileID: 127574998687628330, guid: 727c3d9fe40697e4fa112fce8bcc9dff,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.803
+      objectReference: {fileID: 0}
+    - target: {fileID: 127574998687628333, guid: 727c3d9fe40697e4fa112fce8bcc9dff,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -8709216409482122254, guid: 5f9ed155d0c34784d8f77acc19a5f5b1,
+        type: 2}
+    - target: {fileID: 127574998687628335, guid: 727c3d9fe40697e4fa112fce8bcc9dff,
+        type: 3}
+      propertyPath: m_text
+      value: Holiday is coming!
+      objectReference: {fileID: 0}
+    - target: {fileID: 127574998687628335, guid: 727c3d9fe40697e4fa112fce8bcc9dff,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5f9ed155d0c34784d8f77acc19a5f5b1,
+        type: 2}
+    - target: {fileID: 127574998687628335, guid: 727c3d9fe40697e4fa112fce8bcc9dff,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8709216409482122254, guid: 5f9ed155d0c34784d8f77acc19a5f5b1,
+        type: 2}
+    - target: {fileID: 127574998687628335, guid: 727c3d9fe40697e4fa112fce8bcc9dff,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 127574998687628335, guid: 727c3d9fe40697e4fa112fce8bcc9dff,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 127574998687628335, guid: 727c3d9fe40697e4fa112fce8bcc9dff,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 127574998687628335, guid: 727c3d9fe40697e4fa112fce8bcc9dff,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 127574998687628335, guid: 727c3d9fe40697e4fa112fce8bcc9dff,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 127574998687628335, guid: 727c3d9fe40697e4fa112fce8bcc9dff,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 646439422640653344, guid: 727c3d9fe40697e4fa112fce8bcc9dff,
         type: 3}
       propertyPath: pos.Array.size
@@ -2301,6 +2365,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b409a5f772fef0448710c3dd4b152db, type: 3}
+--- !u!1 &8606661078897020410 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2012776061023296526, guid: 4b409a5f772fef0448710c3dd4b152db,
+    type: 3}
+  m_PrefabInstance: {fileID: 8606661078897020409}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8977696860189189260
 PrefabInstance:
   m_ObjectHideFlags: 0
