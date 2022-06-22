@@ -42,7 +42,6 @@ public class GameManager : MonoBehaviour
         loseUI.SetActive(false);
         StartCoroutine(TranDown());
         balls = GameObject.FindGameObjectsWithTag("Ball");
-        if (levelIndex == 1)
             foreach (var item in balls)
         {
             item.GetComponent<RandomMove>().enabled = false;
@@ -143,7 +142,6 @@ public class GameManager : MonoBehaviour
     IEnumerator TranDown() {
         tranDownUI.SetActive(true);
         yield return new WaitForSeconds(1.4f);
-        if(levelIndex==1)
         GoalUI.SetActive(true);
         tranDownUI.SetActive(false);
         initialized();

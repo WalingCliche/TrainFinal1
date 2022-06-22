@@ -5,7 +5,7 @@ using UnityEngine;
 public class TrainManager : MonoBehaviour
 {
     public GameObject[] trains;
-    public float showtime;
+    public float showtime; 
     public static TrainManager _ins;
     // Start is called before the first frame update
     private void Awake()
@@ -24,6 +24,7 @@ public class TrainManager : MonoBehaviour
         //    trains[i] = transform.GetChild(i).GetChild(0).gameObject;
         //}   
         StartCoroutine(StartTrain(trains[0], showtime));
+        StartCoroutine(StartTrain(trains[1], showtime+6f));
     }
     IEnumerator StartTrain(GameObject X, float time) { 
     yield  return new WaitForSeconds(time);
