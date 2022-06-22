@@ -33,7 +33,8 @@ public class LevelSelection : MonoBehaviour
     }
     void ResetStars()
     {
-            for (int i = 0; i < 4; i++)
+        PlayClickSound();
+        for (int i = 0; i < 4; i++)
             {
                     stars[i].SetActive(false);     
             }
@@ -48,6 +49,11 @@ public class LevelSelection : MonoBehaviour
 
    public  void ChooseLevel() 
     {
+        PlayClickSound();
         SceneManager.LoadScene("Level"+ index);
+    }
+    void PlayClickSound()
+    {
+        SoundManager._ins.GetComponent<AudioSource>().PlayOneShot((AudioClip)Resources.Load("SFX/Click"));
     }
 }

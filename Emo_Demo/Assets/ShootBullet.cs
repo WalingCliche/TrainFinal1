@@ -15,7 +15,7 @@ public class ShootBullet : MonoBehaviour
         rig = GetComponent<Rigidbody2D>();
         rig.AddForce(transform.up*force);
    //     GetComponent<RandomMove>().enabled = false;
-        GetComponent<Rigidbody2D>().gravityScale = 0.1f;
+        GetComponent<Rigidbody2D>().gravityScale = 0.15f;
         //   rig.AddForce(new Vector2(Random.Range(0.5f,1.5f), Random.Range(0.5f, 1.5f))*force);
          StartCoroutine(ResetGravity(0.5f));
     }

@@ -8,11 +8,21 @@ public class ClickButtons : MonoBehaviour
 
     public void Retry()
     {
+        PlayClickSound();
         StartCoroutine(ReTranUp());
     }
     public void NextLevel()
     {
+        PlayClickSound();
         StartCoroutine(TranUp());
+    }
+
+    public void ClickStart() {
+        PlayClickSound();
+        SceneManager.LoadScene("Menu");
+    }
+    void PlayClickSound() {
+        SoundManager._ins.GetComponent<AudioSource>().PlayOneShot((AudioClip)Resources.Load("SFX/Click"));
     }
     IEnumerator TranUp() {
         TransUp.SetActive(true);

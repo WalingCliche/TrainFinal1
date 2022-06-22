@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 public enum GameState{indle,win,lose}
 public class GameManager : MonoBehaviour
 {
@@ -30,7 +31,9 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-
+        string x;
+        x = SceneManager.GetActiveScene().name;
+        levelIndex = int.Parse(x.Substring(x.Length - 1, 1));
         areas = GameObject.FindGameObjectsWithTag("CircleArea");
         winUI.SetActive(false);
         loseUI.SetActive(false);
@@ -163,6 +166,7 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("StarsLevel" + levelIndex, currentStar);
         }
     }
+
 
 
 }

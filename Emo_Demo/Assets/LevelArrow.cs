@@ -32,14 +32,18 @@ public class LevelArrow : MonoBehaviour
             if (!limit)
             {
                 TargetPos = Level.anchoredPosition + new Vector2(-moveDis, 0);
+                PlayClickSound();
             }
         }
-        else
+        else//Left
         {
             left.enabled = false;
             StartCoroutine(ResetButton(left));
             if (!leftLimit)
-            TargetPos = Level.anchoredPosition - new Vector2(-moveDis, 0);
+            { 
+                TargetPos = Level.anchoredPosition - new Vector2(-moveDis, 0);
+                PlayClickSound();
+            }
         }
         
         
@@ -63,7 +67,11 @@ public class LevelArrow : MonoBehaviour
         yield return new WaitForSeconds(0.6f);
         x.enabled = true;
     }
-        
+    void PlayClickSound()
+    {
+        SoundManager._ins.GetComponent<AudioSource>().PlayOneShot((AudioClip)Resources.Load("SFX/Click"));
+    }
 
-    
+
+
 }

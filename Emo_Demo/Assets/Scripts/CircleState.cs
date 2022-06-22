@@ -34,6 +34,10 @@ public class CircleState : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (state == CircleColorState.CircleBlue)
+            GetComponent<AudioSource>().enabled = true;
+        else
+            GetComponent<AudioSource>().enabled = false;
         areaBall = GetComponent<CircleDetect>().areaBall;
         changeCircleAreaColor(transform.GetComponent<CircleDetect>().count);
         ColorState(state);

@@ -15,7 +15,9 @@ public class Setting : MonoBehaviour
             Over();
         }
     }
-    public void OpenSettingAndPause() {
+    public void OpenSettingAndPause() 
+    {
+        PlayClickSound();
         PauseGame();
         SettingUI.SetActive(true);
     }
@@ -34,5 +36,8 @@ public class Setting : MonoBehaviour
     void PauseGame() {
         Time.timeScale = 0;
     }
-
+    void PlayClickSound()
+    {
+        SoundManager._ins.GetComponent<AudioSource>().PlayOneShot((AudioClip)Resources.Load("SFX/Click"));
+    }
 }

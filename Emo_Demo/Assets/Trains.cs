@@ -48,11 +48,11 @@ public class Trains : MonoBehaviour
         if (Vector2.Distance(transform.position, pos[index].position) < 0.02f && index == pos.Length - 1)
         {
              Destroy(transform.parent.gameObject);
-            TrainReset();
-            int x = Random.Range(0, TrainManager._ins.trains.Length);
-            while (gameObject == TrainManager._ins.trains[x])
-                x = Random.Range(0, TrainManager._ins.trains.Length);
-            TrainManager._ins.trains[x].SetActive(true);
+            //TrainReset();
+            //int x = Random.Range(0, TrainManager._ins.trains.Length);
+            //while (gameObject == TrainManager._ins.trains[x])
+            //    x = Random.Range(0, TrainManager._ins.trains.Length);
+            //TrainManager._ins.trains[x].SetActive(true);
         }
 
 
@@ -63,7 +63,6 @@ public class Trains : MonoBehaviour
             {
                 ShootBall(shootColor);
             }
-
             timer = 0;
             oneTime = true;
         }
@@ -87,6 +86,7 @@ public class Trains : MonoBehaviour
         gameObject.SetActive(false);
     }
     void ShootBall(BallColor color) {
+   //     Debug.Log(111);
         switch (color)
         {
             case BallColor.Red:
@@ -109,10 +109,15 @@ public class Trains : MonoBehaviour
                 ball.AddComponent<ShootBullet>();
                 break;
         }
+        PlayShootSound();
 
 
 
     }
+    void PlayShootSound()
+    {
+      transform.GetComponent<AudioSource>().PlayOneShot((AudioClip)Resources.Load("SFX/Shoot"));
 
+    }
 
 }
